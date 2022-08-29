@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55 (78076) - https://sketchapp.com -->
+    <title>Group 4 Copy 8</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Sizes" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Form-Field-Icons" transform="translate(-2653.000000, -891.000000)" fill-rule="nonzero">
+            <g id="Group-4-Copy-8" transform="translate(2685.000000, 923.000000) scale(-1, 1) translate(-2685.000000, -923.000000) translate(2653.000000, 891.000000)">
+                <path d="M32,64 C49.673112,64 64,49.673112 64,32 C64,14.326888 49.673112,0 32,0 C14.326888,0 0,14.326888 0,32 C0,49.673112 14.326888,64 32,64 Z" id="Oval-Copy-22" fill="#102B4E"></path>
+                <path d="M24.7886694,46.1067918 C23.7430794,47.1439811 23.7362692,48.8324073 24.7734585,49.8779973 C25.8106478,50.9235873 27.499074,50.9303975 28.544664,49.8932082 L44.544664,34.0217593 C45.5902778,32.9845464 45.5970609,31.2960731 44.5598142,30.2504927 L28.5598142,14.1219416 C27.5225912,13.0763851 25.8341648,13.0696294 24.7886083,14.1068524 C23.7430517,15.1440755 23.7362961,16.8325019 24.7735191,17.8780584 L38.8954001,32.1134009 L24.7886694,46.1067918 Z" id="Path-Copy-7" fill="#FFFFFF"></path>
+            </g>
+        </g>
+    </g>
+</svg>

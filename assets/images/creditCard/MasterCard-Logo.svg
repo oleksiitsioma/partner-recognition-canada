@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="42px" height="30px" viewBox="0 0 42 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>MasterCard-Logo</title>
+    <g id="MasterCard-Logo" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="MasterCard">
+            <rect id="Rectangle" x="0" y="0" width="42" height="30" rx="3"></rect>
+            <circle id="Oval" fill="#F79E1C" cx="26.5" cy="15" r="9"></circle>
+            <circle id="Oval-Copy" fill="#EB011B" cx="15.5" cy="15" r="9"></circle>
+            <path d="M21.0006345,7.87603832 C23.1293025,9.52206404 24.5,12.1009602 24.5,15 C24.5,17.8990398 23.1293025,20.477936 21.0006345,22.1239617 C18.871128,20.4787458 17.5,17.8994949 17.5,15 C17.5,12.1596784 18.8157346,9.62666314 20.8709591,7.9771989 Z" id="Combined-Shape" fill="#FF5F00"></path>
+        </g>
+    </g>
+</svg>

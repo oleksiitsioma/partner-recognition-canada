@@ -1,0 +1,196 @@
+@charset "UTF-8";
+/**
+ * Maps over breakpoints and itterates over options to create list of attributes for each type-set.
+ * @param {map} $breakpoints - SCSS map object that contains a list of breakpoints to map over.
+ */
+/**
+ * Maps over type-sets to generate utility classes or placeholders to extend types by.
+ * @param {string} $modifier - The name that is prefixed when mapping over.
+ * @param {map} $type-set - SCSS map object that contains list of type-sets to map over.
+ */
+/**
+ * Convert values into em units.
+ * @param {string} $pixels - Unit value. Can only be single.
+ * @param {string} $context [$fds-base-multiplier-em] - Set unit base, or defaults to defined value in settings.
+ *
+ * @example scss - Use with single or multiple units
+ *  font-size: fds-em(20px);
+ *
+ * @example scss - Use with a base unit size
+ *  font-size: fds-em(20px, 12px);
+ */
+/**
+ * Convert px units into rem values.
+ * @param {string} $values - Can be single, mix, or group of 3 or 4.
+ * @param {string} $fontBase [$fds-base-multiplier-rem] - Set unit base, or defaults to defined value in settings.
+ *
+ * @example scss - Use with single or multiple units
+ *  font-size: fds-rem(20px);
+ *  padding: fds-rem(20px 50px);
+ *
+ * @example scss - Use with a base unit size
+ *  font-size: fds-rem(20px, 10px);
+ */
+/**
+ * Convert a color into an RGB tuple.
+ *
+ * @param {string} $color - Color value.  Can be any color that Sass can interpret.
+ *
+ * This tuple is useful e.g. in the CSS function `rgba()` (not to be confused
+ * by the Sass function of the same name.)  It enables you to do things like,
+ *
+ * @example scss - Define a transparency
+ *  --color--tertiary: fds-color2rgb(#00142e);                     // -> 0, 20, 46
+ *  --overlay-color-tuple: var(--color--tertiary);
+ *  --overlay-transparency: rgba(var(--overlay-color-tuple), 0.5);    // -> rgba(0, 20, 46, 0.5)
+ *
+ *  while keeping it easy to override `--overlay-color`.
+ */
+/* example: Primary Button Active */
+/* example: Primary Button Default */
+/* example: Primary Button Hover */
+:root {
+  --fds-base-multiplier-rem: 10px;
+  --fds-layout-grid-padding-xl: 100px;
+  --fds-layout-grid-margin-xl: 24px;
+  --fds-layout-grid-gutter-xl: 24px;
+  --fds-layout-grid-column-width-xl: 121px;
+  --fds-layout-grid-padding-lg: 100px;
+  --fds-layout-grid-margin-lg: 24px;
+  --fds-layout-grid-gutter-lg: 24px;
+  --fds-layout-grid-column-width-lg: 81px;
+  --fds-layout-grid-padding-md: 100px;
+  --fds-layout-grid-margin-md: 24px;
+  --fds-layout-grid-gutter-md: 24px;
+  --fds-layout-grid-column-width-md: 53px;
+  --fds-layout-grid-padding-sm: 20px;
+  --fds-layout-grid-margin-sm: 16px;
+  --fds-layout-grid-gutter-sm: 16px;
+  --fds-layout-grid-column-width-sm: 56px;
+  --fds-layout-grid-padding-xs: 20px;
+  --fds-layout-grid-margin-xs: 16px;
+  --fds-layout-grid-gutter-xs: 16px;
+  --fds-layout-grid-column-width-xs: 56px;
+  --fds-color--primary: #00095b;
+  --fds-color--secondary: #1700f4;
+  --fds-color--tertiary: #00142e;
+  --fds-color--fourth: #f4f4f4;
+  --fds-color--white: #fff;
+  --fds-color--black: #000;
+  --fds-color--gray1: #f2f2f2;
+  --fds-color--gray2: #6e6e6e;
+  --fds-color--gray3: #4d4d4d;
+  --fds-color--disabled1: #8c8c8c;
+  --fds-color--disabled2: #9c9c9c;
+  --fds-color--disabled3: #6e6e6e;
+  --fds-color--caution1: #da7029;
+  --fds-color--caution2: #ba4e00;
+  --fds-color--error1: #d62d0a;
+  --fds-color--error2: #ff3030;
+  --fds-color--success1: #008200;
+  --fds-color--success2: #29a429;
+  --fds-color--primary-5: rgba(0, 9, 91, 0.05);
+  --fds-color--primary-50: rgba(0, 9, 91, 0.5);
+  --fds-color--primary-90: rgba(0, 9, 91, 0.9);
+  --fds-color--tertiary-0: rgba(0, 20, 46, 0);
+  --fds-color--tertiary-40: rgba(0, 20, 46, 0.4);
+  --fds-color--tertiary-70: rgba(0, 20, 46, 0.7);
+  --fds-color--tertiary-100: #00142e;
+  --fds-color--black-20: rgba(0, 0, 0, 0.2);
+  --fds-color--black-40: rgba(0, 0, 0, 0.4);
+  --fds-color--black-70: rgba(0, 0, 0, 0.7);
+  --fds-color--white-0: rgba(255, 255, 255, 0);
+  --fds-color--white-10: rgba(255, 255, 255, 0.1);
+  --fds-color--white-50: rgba(255, 255, 255, 0.5);
+  --fds-color--white-80: rgba(255, 255, 255, 0.8);
+  --fmc-font--system: -apple-system, blinkmacsystemfont, "Segoe UI", helvetica, arial, sans-serif;
+  --fmc-font--mono: "Lucida Sans Typewriter", "Lucida Console", monaco, "Bitstream Vera Sans Mono", monospace;
+  --fmc-font--antenna: "FordAntenna", Arial, Helvetica, sans-serif;
+  --fmc-font--miller: "MillerBWGL", "Times New Roman", Times, serif;
+  --fmc-font--proxima-nova: "ProximaNova", Arial, Helvetica, sans-serif;
+  --fmc-font--ford-icons: "FordIcons";
+  --fds-font--ford-icons__play-arrow: "";
+  --fds-font--ford-icons__unmask: "";
+  --fds-font--ford-icons__mask: "";
+  --fds-font--ford-icons__success: "";
+  --fds-font--ford-icons__error: "";
+  --fds-font--ford-icons__clear: "";
+  --fds-font--ford-icons__tick: "";
+  --fds-font--ford-icons__chevron-left: "";
+  --fds-font--ford-icons__chevron-right: "";
+  --fds-font--ford-icons__chevron-up: "";
+  --fds-font--ford-icons__chevron-down: "";
+  --fds-font--ford-icons__edit: "";
+  --fds-font--ford-icons__info-filled: "";
+  --fds-font--ford-icons__warning-filled: "";
+  --fds-font--ford-icons__check-filled: "";
+  --fds-font--ford-icons__dark-car-rear: "";
+  --fds-font--ford-icons__dark-car-side: "";
+  --fds-font--ford-icons__dark-seat: "";
+  --fds-font--ford-icons__search: "";
+  --fds-font--ford-icons__chat: "";
+  --fds-font--ford-icons__ellipsis: "";
+  --fds-font--ford-icons__minus: "";
+  --fds-font--ford-icons__plus: "";
+  --fds-font--ford-icons__info-outlined: "";
+  --fds-font--ford-icons__long-arrow-back: "";
+  --fds-font--ford-icons__long-arrow-forward: "";
+  --fds-font--ford-icons__chevron-filled-right: "";
+  --fds-font--ford-icons__chevron-filled-left: "";
+  --fmc-type__base-font: var(--fmc-font--antenna);
+  --fmc-type__leading-default: 0;
+  --fmc-type__leading-narrow: 0.1rem;
+  --fmc-type__leading-wide: 0.2rem;
+  --fmc-type__weight-light: 300;
+  --fmc-type__weight-normal: 400;
+  --fmc-type__weight-medium: 500;
+  --fmc-type__weight-bold: 700;
+  --fmc-elevation__box-shadow--layer1: 0 1rem 1rem 0 rgba(0, 0, 0, 0.1);
+  --fmc-elevation__box-shadow--layer2: 0 1rem 1rem 0 rgba(0, 0, 0, 0.1), 0 2rem 2rem 0 rgba(0, 0, 0, 0.1), 0 3rem 3rem 0 rgba(0, 0, 0, 0.15);
+  --fmc-elevation__box-shadow--layer3: 0 1.1rem 1.1rem 0 rgba(0, 0, 0, 0.1), 0 2.1rem 2.1rem 0 rgba(0, 0, 0, 0.1), 0 3.2rem 3.2rem 0 rgba(0, 0, 0, 0.15);
+  --fds-outline: 1px solid var(--fds-color--primary);
+  --fds-outline-dark: 1px solid var(--fds-color--white);
+  --fds-outline-offset: 2rem;
+  --fmc-spacing--0: 0rem;
+  --fmc-spacing--1: 0.4rem;
+  --fmc-spacing--2: 0.8rem;
+  --fmc-spacing--3: 1.6rem;
+  --fmc-spacing--4: 2.4rem;
+  --fmc-spacing--5: 3.2rem;
+  --fmc-spacing--6: 4rem;
+  --fmc-spacing--7: 4.8rem;
+  --fmc-spacing--8: 5.6rem;
+  --fmc-spacing--9: 6.4rem;
+  --fmc-spacing--10: 8rem;
+  --fmc-spacing--11: 9.6rem;
+  --fmc-spacing--12: 12rem;
+  --fmc-spacing--13: 16rem;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*[data-brand=lincoln] {
+  --fds-color--primary: #324047;
+  --fds-color--secondary: #f26147;
+  --fds-color--tertiary: #ecedee;
+  --fds-color--black: #22292b;
+  --fds-color--gray1: #f6f7f7;
+  --fds-color--gray2: #ecedee;
+  --fds-color--gray3: #233338;
+  --fds-color--gray4: #919191;
+  --fds-color--disabled1: #717171;
+  --fds-color--disabled2: #e0e0e0;
+  --fds-color--disabled3: #54565b;
+  --fds-color--caution1: #fcded8;
+  --fds-color--error1: #b00020;
+  --fds-color--error2: #ff8787;
+  --fds-color--success1: #219653;
+  --fds-color--success2: #54d089;
+  --fmc-type__base-font: var(--fmc-font--proxima-nova);
+  --fds-outline-offset: 0.3rem;
+}
+
+/*# sourceMappingURL=fds-root.css.map */
