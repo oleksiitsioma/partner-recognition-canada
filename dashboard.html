@@ -29,7 +29,7 @@
         </div>
         <div class="header_main">
             <div class="fds-layout-grid fds-align--center fmc-py-3">
-                <div class="fds-layout-grid__inner header_flex">
+                <div class="fds-layout-grid__inner header_flex fmc-pb-2">
                     <div class="fds-layout-grid__cell--span-3">
                         <a href="./index.html">
                             <img src="./img/header-logo.svg" alt="" class="header__logo">
@@ -45,7 +45,7 @@
                     <div class="fds-layout-grid__cell--span-3 fds-align--right">
                         <div class="header__user-area">
                             <a href="./index.html">
-                                <img src="./img/header-flag.svg" alt="" class="header__flag fmc-mb-2">
+                                <img src="./img/header-flag.svg" alt="" class="header__flag">
                             </a>
                             <p class="fmc-type--content2 fmc-mb-1">Welcome, Academy Ford Sales</p>
                             <p class="fmc-type--content2 fmc-type--bold">Membership Organization Partner</p>
@@ -56,9 +56,61 @@
         </div>
     </header>
     <main class="fmc-pt-8 fmc-pb-10">
-        <div class="fds-layout-grid">
-            <h1 class="fmc-type--heading4 fds-align--center fmc-mb-7">Dashboard</h1>
+        <div class="fmc-billboard fmc-billboard--justify-start fmc-billboard--align-start">
+            <div class="fmc-billboard__image" style="background-image: url(img/dashboard.png);"></div>
+            <div class="fmc-billboard__scrim fmc-billboard--scrim-left fmc-billboard--scrim-dark"></div>
+            <div class="fmc-billboard__content fmc-py-9 fmc-px-10">
+                <div class="fds-layout-grid__inner">
+                    <div class="fds-layout-grid__cell--span-6">
+                        <h1 class="fds-color__text--white fmc-mb-3">X-Plan Partner Recognition</h1>
+                    </div>
+                </div>
+                <div class="fds-layout-grid__inner">
+                    <div class="fds-layout-grid__cell--span-4">
+                        <p class="fmc-type--body1 fmc-type--bold fmc-type--white fmc-mb-1">Exclusive Pricing.</p>
+                        <p class="fmc-type--body1 fmc-type--white fmc-mb-3">The Plan price is established before you visit the dealership.</p>
+                        <p class="fmc-type--body1 fmc-type--bold fmc-type--white fmc-mb-1">Exceptionally Simple.</p>
+                        <p class="fmc-type--body1 fmc-type--white fmc-mb-3">The Plan price is clearly marked on the vehicle invoice. Simply ask for a copy of the invoice to confirm special pricing.</p>
+                        <p class="fmc-type--body1 fmc-type--bold fmc-type--white fmc-mb-1">Great Value.</p>
+                        <p class="fmc-type--body1 fmc-type--white fmc-mb-6">You get exclusive pricing in addition to most other publicly offered programs.</p>
+                        <button class="fmc-button" data-dark>Learn More</button>
+                    </div>
+                </div>
+                <div class="fds-layout-grid__inner fmc-pt-3">
+                    <div class="fds-layout-grid__cell--span-6">
+                        <button class="fmc-button fmc-mr-3 fmc-button--modalopener" data-modal-opener="Login modal" data-dark>Modal 1</button>
+                        <button class="fmc-button fmc-mr-3 fmc-button--modalopener" data-modal-opener="Membership Organization Partner" data-dark>Modal 2</button>
+                        <button class="fmc-button fmc-button--modalopener" data-modal-opener="Employee Partner" data-dark>Modal 3</button>
+                    </div>
+                </div>
+            </div>
         </div>
+
+        <div class="fds-layout-grid fmc-pt-6 fmc-pb-4">
+            <div class="fds-layout-grid__inner fds-layout-grid__inner_five">
+                <div class="fds-layout-grid__cell--span-1 fds-align--center">
+                    <img src="img/dashboard-ford.svg" alt="" srcset="">
+                    <p class="fmc-type--body2">Sales Reporting</p>
+                </div>
+                <div class="fds-layout-grid__cell--span-1 fds-align--center">
+                    <img src="img/dashboard-ford.svg" alt="" srcset="">
+                    <p class="fmc-type--body2">Marketing Toolkit</p>
+                </div>
+                <div class="fds-layout-grid__cell--span-1 fds-align--center">
+                    <img src="img/dashboard-ford.svg" alt="" srcset="">
+                    <p class="fmc-type--body2">Ford.com</p>
+                </div>
+                <div class="fds-layout-grid__cell--span-1 fds-align--center">
+                    <img src="img/dashboard-ford.svg" alt="" srcset="">
+                    <p class="fmc-type--body2">Lincoln.com</p>
+                </div>
+                <div class="fds-layout-grid__cell--span-1 fds-align--center">
+                    <img src="img/dashboard-ford.svg" alt="" srcset="">
+                    <p class="fmc-type--body2">Ford Recognition Programs</p>
+                </div>
+            </div>
+        </div>
+
     </main>
     <footer class="footer">
         <div class="footer_top fds-layout-grid fds-color__bg--secondary fmc-py-6">
@@ -78,5 +130,103 @@
             </div>
         </div>
     </footer>
+
+    <div class="fmc-dialog fds-align--center" role="dialog" aria-modal="true" data-modal="Login modal">
+        <div class="fmc-dialog__content">
+            <button class="fmc-dialog__close fds-icon fds-font--ford-icons__clear" alt="A close button."></button>
+            <div class="fmc-dialog__header fmc-pb-3 fmc-mb-3">
+                <h2 class="fmc-type--subtitle1 fmc-mb-1">Academy Ford Sales</h2>
+                <h2 class="fmc-type--subtitle1">Membership Organization Partner</h2>
+            </div>
+            <div class="">
+                <p class="fmc-type--body2">
+                    This site is a resource center designated for the key contact at each approved company/organization. If you reached this site in error and would like to access the customer site to generate a PIN, please click <a href="#">here</a>.
+                </p>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="fmc-dialog" role="dialog" aria-modal="true" data-modal="Membership Organization Partner">
+        <div class="fmc-dialog__content">
+            <button class="fmc-dialog__close fds-icon fds-font--ford-icons__clear" alt="A close button."></button>
+            <div class="fmc-dialog__header fmc-pb-3 fmc-mb-3">
+                <h2 class="fmc-type--subtitle1 fmc-mb-1">Academy Ford Sales</h2>
+                <h2 class="fmc-type--subtitle1">Membership Organization Partner</h2>
+            </div>
+            <div class="fmc-mb-4">
+                <p class="fmc-type--body2">
+                    As the Key Contact, you are invited to frequently visit <a href="https://partnerrecognition.com">www.partnerrecognition.com</a> to take full advantage of Ford's Partner Program for your Members. You will be the primary contact to ensure all offers and benefits are communicated to those who are eligible at your organization.
+                </p>
+            </div>
+            <div class="fmc-mb-4">
+                <p class="fmc-type--body2 fmc-type--bold">Program Overview:</p>
+                <p class="fmc-type--body2">
+                    The Ford Motor Company Partner Recognition Vehicle Purchase Program provides exclusive pricing on eligible Ford and Lincoln vehicles.
+                </p>
+                <p class="fds-color__text--secondary fmc-type--body2">Who's Eligible</p>
+                <ul>
+                    <li class="fmc-type--body2">Members and people within the same household.</li>
+                </ul>
+                <p class="fds-color__text--secondary fmc-type--body2">Business Owners</p>
+                <ul>
+                    <li class="fmc-type--body2">Vehicles can be registered in a company's name.</li>
+                </ul>
+                <p class="fds-color__text--secondary fmc-type--body2">Number of PINs</p>
+                <ul>
+                    <li class="fmc-type--body2">Each member is limited to 2 Personal Identification Numbers (PINs) per calendar year.</li>
+                </ul>
+            </div>
+            <div class="">
+                <p class="fmc-type--body2 fmc-type--bold">Proof of Eligibility for X-Plan Partner Recognition Program: </p>
+                <p class="fmc-type--body2">
+                    The dealership must retain a copy of the proof of membership, acceptable proof of documents are listed below. For full details, please visit the member website at <a href="https://fordpartner.com">www.fordpartner.com</a>
+                </p>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="fmc-dialog" role="dialog" aria-modal="true" data-modal="Employee Partner">
+        <div class="fmc-dialog__content">
+            <button class="fmc-dialog__close fds-icon fds-font--ford-icons__clear" alt="A close button."></button>
+            <div class="fmc-dialog__header fmc-pb-3 fmc-mb-3">
+                <h2 class="fmc-type--subtitle1 fmc-mb-1">OneMagnify</h2>
+                <h2 class="fmc-type--subtitle1">Employee Partner</h2>
+            </div>
+            <div class="fmc-mb-4">
+                <p class="fmc-type--body2">
+                    As the Key Contact, you are invited to frequently visit <a href="https://partnerrecognition.com">www.partnerrecognition.com</a> to take full advantage of Ford's Partner Program for your Members. You will be the primary contact to ensure all offers and benefits are communicated to those who are eligible at your organization. 
+                </p>
+            </div>
+            <div class="fmc-mb-4">
+                <p class="fmc-type--body2 fmc-type--bold">Program Overview:</p>
+                <p class="fmc-type--body2">
+                    As the Key Contact, you are invited to frequently visit www.partnerrecognition.com to take full advantage of Ford's Partner Program for your Employees You will be the primary contact to ensure all offers and benefits are communicated to those who are eligible at your company. 
+                </p>
+                <p class="fds-color__text--secondary fmc-type--body2">Who's Eligible</p>
+                <ul>
+                    <li class="fmc-type--body2">Members and people within the same household.</li>
+                </ul>
+                <p class="fds-color__text--secondary fmc-type--body2">Business Owners</p>
+                <ul>
+                    <li class="fmc-type--body2">Vehicles can be registered in a company's name.</li>
+                </ul>
+                <p class="fds-color__text--secondary fmc-type--body2">Number of PINs</p>
+                <ul>
+                    <li class="fmc-type--body2">Each member is limited to 2 Personal Identification Numbers (PINs) percalendar year.</li>
+                </ul>
+            </div>
+            <div class="">
+                <p class="fmc-type--body2 fmc-type--bold">Proof of Eligibility for X-Plan Partner Recognition Program: </p>
+                <p class="fmc-type--body2">
+                    The dealership must retain a copy of the proof of employment- Employees and  Retirees must provide proof of eligibility to an X-Plan participating dealer. Acceptable proof is a recent organization ID, pay stub, W-2 (T-4) form or heath card. For full details, please visit the employee and retire website at <a href="https://fordpartner.com">www.fordpartner.com</a>
+                </p>
+            </div>
+            
+        </div>
+    </div>
+
+    <script src="js/scripts.js"></script>
 </body>
 </html>

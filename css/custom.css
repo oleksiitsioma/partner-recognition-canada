@@ -60,3 +60,33 @@
     align-items: center;
     border-bottom: 1px solid rgba(0,0,0,0.4);
 }
+
+.fds-layout-grid__inner_five{
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.fmc-dialog{
+    z-index: 9;
+}
+
+.fmc-dialog .fmc-dialog__content{
+    padding: 32px 40px;
+}
+
+.fmc-dialog .fmc-dialog__close{
+    top: 40px;
+    right: 40px;
+}
+
+.fmc-dialog__header{
+    border-bottom: 1px solid rgba(0,0,0,0.4);
+}
+
+.fmc-dialog ul li{
+    list-style-type: none;
+    padding-left: 30px;
+}
+
+.fmc-dialog ul li:before{
+    content: "\2014   ";
+}
