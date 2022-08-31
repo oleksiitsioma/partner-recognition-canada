@@ -1,3 +1,11 @@
+.header_home .header_main .fds-layout-grid{
+    padding-bottom: 0;
+}
+
+.header_home .header_main .fds-layout-grid .header_flex{
+    border: none;
+}
+
 .menu_small li{
     display: inline;
     position: relative;
