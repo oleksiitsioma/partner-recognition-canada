@@ -144,3 +144,72 @@
 .fmc-check label:not(:last-child){
     margin-bottom: 6px!important;
 }
+
+.mobileHeader{
+    display: none;
+}
+
+@media screen and (max-width: 768px){
+    .fds-layout-grid__inner{
+        display: block;
+    }
+    .header{
+        min-height: calc(100vh - 110px);
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        display: none;
+        overflow-y: auto;
+        height: calc(100vh - 110px);
+    }
+    .header.header_mobile_open{
+        display: flex;
+    }
+    .header.header_mobile_open .header__logo{
+        display: none;
+    }
+    .header_main{
+        margin-bottom: 200px;
+        top: 0;
+    }
+    .header_flex{
+        display: flex!important;
+        justify-content: center!important;
+    }
+    .header_main__menu{
+        flex-direction: column;
+    }
+    .header__user-area{
+        text-align: center;
+    }
+    .header_top__menu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .header_top__menu li{
+        padding: 0!important;
+        margin: 0!important;
+    }
+    .header_top__menu li:after{
+        display: none;
+    }
+
+    .mobileHeader{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 110px;
+    }
+    .fds-layout-grid{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .fmc-tabs__tablist{
+        display: flex;
+        flex-direction: column;
+    }
+    .fmc-input, .fmc-select{
+        margin-bottom: 12px;
+    }
+}

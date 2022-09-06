@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
+    <title>Sales Reporting</title>
 
     <!--FDS Styles-->
     <link rel="stylesheet" type="text/css" href="css/fds-root.css" />
@@ -14,7 +14,13 @@
     <link rel="stylesheet" type="text/css" href="css/custom.css" />
 </head>
 <body>
-    <header>
+    <div class="mobileHeader fmc-py-3 fmc-px-3">
+        <a href="./index.html" class="header__logoLink">
+            <img src="./img/header-logo.svg" alt="" class="header__logo">
+        </a>
+        <button class="menu" id="menu-opener">menu</button>
+    </div>
+    <header class="header header_home">
         <div class="header_top fds-color__bg--fourth">
             <div class="fds-layout-grid fds-align--right fmc-py-2">
                 <ul class="header_top__menu menu_small">
@@ -58,6 +64,188 @@
     <main class="fmc-pt-8 fmc-pb-10">
         <div class="fds-layout-grid">
             <h1 class="fmc-type--heading4 fds-align--center fmc-mb-7">Sales Reporting</h1>
+            <div class="js-fmc-tabs fmc-tabs fmc-pt-7">
+                <div class="fmc-tabs__tablist-wrapper">
+                  <div class="fmc-tabs__tablist" role="tablist" aria-label="Features">
+                    <button
+                      class="fmc-tabs__tab fds-color__text--gray2 fmc-type--bold"
+                      role="tab"
+                      aria-selected="true"
+                      aria-controls="xPlanPrintAssets"
+                      tabindex="0"
+                    >
+                    Reports by Dealer
+                    </button>
+                    <button
+                      class="fmc-tabs__tab fds-color__text--gray2 fmc-type--bold"
+                      role="tab"
+                      aria-selected="false"
+                      aria-controls="xPlanDigitalAssets"
+                      tabindex="-1"
+                    >
+                    Reports by Company
+                    </button>
+                    <button
+                      class="fmc-tabs__tab fds-color__text--gray2 fmc-type--bold"
+                      role="tab"
+                      aria-selected="false"
+                      aria-controls="xPlanHeyContactFuide"
+                      tabindex="-1"
+                    >
+                    Reports by Employee
+                    </button>
+                    <span class="fmc-tabs__tab-border"></span>
+                  </div>
+                </div>
+                <div class="fmc-tabs__tabpanels fds-color--gray3">
+                    <div class="fmc-tabs__tabpanel" role="tabpanel" aria-labelledby="xPlanPrintAssets" tabindex="0">
+                        <div class="fds-layout-grid">
+                            <div class="fds-layout-grid__inner">
+                                <div class="fds-layout-grid__cell--span-4 fds-align--center fmc-mt-8">
+                                    <img class="fmc-marketing-toolkit-img fmc-cards__image fmc-mb-2" src="./img/xplan-full-logo.svg" alt="a placeholder" />
+                                    <p class="fmc-type--body2 fmc-type--bold fmc-mb-3">X-Plan Partner Recognition<br>Ford - RGB</p>
+                                    <a class="fmc-button" href="#">
+                                        Download file
+                                        <span class="fds-icon fds-font--ford-icons__chevron-right fds-icon--offset-right"></span>
+                                    </a>
+                                </div>
+                                <div class="fds-layout-grid__cell--span-4 fds-align--center fmc-mt-8">
+                                    <img class="fmc-marketing-toolkit-img fmc-cards__image fmc-mb-2" src="./img/xplan-full-logo.svg" alt="a placeholder" />
+                                    <p class="fmc-type--body2 fmc-type--bold fmc-mb-3">X-Plan Partner Recognition<br>Ford - RGB</p>
+                                    <a class="fmc-button" href="#">
+                                        Download file
+                                        <span class="fds-icon fds-font--ford-icons__chevron-right fds-icon--offset-right"></span>
+                                    </a>
+                                </div>
+                                <div class="fds-layout-grid__cell--span-4 fds-align--center fmc-mt-8">
+                                    <img class="fmc-marketing-toolkit-img fmc-cards__image fmc-mb-2" src="./img/xplan-full-logo.svg" alt="a placeholder" />
+                                    <p class="fmc-type--body2 fmc-type--bold fmc-mb-3">X-Plan Partner Recognition<br>Ford - RGB</p>
+                                    <a class="fmc-button" href="#">
+                                        Download file
+                                        <span class="fds-icon fds-font--ford-icons__chevron-right fds-icon--offset-right"></span>
+                                    </a>
+                                </div>
+                                <div class="fds-layout-grid__cell--span-4 fds-align--center fmc-mt-8">
+                                    <img class="fmc-marketing-toolkit-img fmc-cards__image fmc-mb-2" src="./img/xplan-full-logo.svg" alt="a placeholder" />
+                                    <p class="fmc-type--body2 fmc-type--bold fmc-mb-3">X-Plan Partner Recognition<br>Ford - RGB</p>
+                                    <a class="fmc-button" href="#">
+                                        Download file
+                                        <span class="fds-icon fds-font--ford-icons__chevron-right fds-icon--offset-right"></span>
+                                    </a>
+                                </div>
+                                <div class="fds-layout-grid__cell--span-4 fds-align--center fmc-mt-8">
+                                    <img class="fmc-marketing-toolkit-img fmc-cards__image fmc-mb-2" src="./img/xplan-full-logo.svg" alt="a placeholder" />
+                                    <p class="fmc-type--body2 fmc-type--bold fmc-mb-3">X-Plan Partner Recognition<br>Ford - RGB</p>
+                                    <a class="fmc-button" href="#">
+                                        Download file
+                                        <span class="fds-icon fds-font--ford-icons__chevron-right fds-icon--offset-right"></span>
+                                    </a>
+                                </div>
+                                <div class="fds-layout-grid__cell--span-4 fds-align--center fmc-mt-8">
+                                    <img class="fmc-marketing-toolkit-img fmc-cards__image fmc-mb-2" src="./img/xplan-full-logo.svg" alt="a placeholder" />
+                                    <p class="fmc-type--body2 fmc-type--bold fmc-mb-3">X-Plan Partner Recognition<br>Ford - RGB</p>
+                                    <a class="fmc-button" href="#">
+                                        Download file
+                                        <span class="fds-icon fds-font--ford-icons__chevron-right fds-icon--offset-right"></span>
+                                    </a>
+                                </div>
+                                <div class="fds-layout-grid__cell--span-4 fds-align--center fmc-mt-8">
+                                    <img class="fmc-marketing-toolkit-img fmc-cards__image fmc-mb-2" src="./img/xplan-full-logo.svg" alt="a placeholder" />
+                                    <p class="fmc-type--body2 fmc-type--bold fmc-mb-3">X-Plan Partner Recognition<br>Ford - RGB</p>
+                                    <a class="fmc-button" href="#">
+                                        Download file
+                                        <span class="fds-icon fds-font--ford-icons__chevron-right fds-icon--offset-right"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fmc-tabs__tabpanel" role="tabpanel" aria-labelledby="xPlanDigitalAssets" tabindex="-1">
+                        <div class="fds-layout-grid">
+                            <div class="fds-layout-grid__inner">
+                                <div class="fds-layout-grid__cell--span-4 fds-align--center fmc-mt-8">
+                                    <img class="fmc-marketing-toolkit-img fmc-cards__image fmc-mb-2" src="./img/xplan-full-logo.svg" alt="a placeholder" />
+                                    <p class="fmc-type--body2 fmc-type--bold fmc-mb-3">X-Plan Partner Recognition<br>Ford - RGB</p>
+                                    <a class="fmc-button" href="#">
+                                        Download file
+                                        <span class="fds-icon fds-font--ford-icons__chevron-right fds-icon--offset-right"></span>
+                                    </a>
+                                </div>
+                                <div class="fds-layout-grid__cell--span-4 fds-align--center fmc-mt-8">
+                                    <img class="fmc-marketing-toolkit-img fmc-cards__image fmc-mb-2" src="./img/xplan-full-logo.svg" alt="a placeholder" />
+                                    <p class="fmc-type--body2 fmc-type--bold fmc-mb-3">X-Plan Partner Recognition<br>Ford - RGB</p>
+                                    <a class="fmc-button" href="#">
+                                        Download file
+                                        <span class="fds-icon fds-font--ford-icons__chevron-right fds-icon--offset-right"></span>
+                                    </a>
+                                </div>
+                                <div class="fds-layout-grid__cell--span-4 fds-align--center fmc-mt-8">
+                                    <img class="fmc-marketing-toolkit-img fmc-cards__image fmc-mb-2" src="./img/xplan-full-logo.svg" alt="a placeholder" />
+                                    <p class="fmc-type--body2 fmc-type--bold fmc-mb-3">X-Plan Partner Recognition<br>Ford - RGB</p>
+                                    <a class="fmc-button" href="#">
+                                        Download file
+                                        <span class="fds-icon fds-font--ford-icons__chevron-right fds-icon--offset-right"></span>
+                                    </a>
+                                </div>
+                                <div class="fds-layout-grid__cell--span-4 fds-align--center fmc-mt-8">
+                                    <img class="fmc-marketing-toolkit-img fmc-cards__image fmc-mb-2" src="./img/xplan-full-logo.svg" alt="a placeholder" />
+                                    <p class="fmc-type--body2 fmc-type--bold fmc-mb-3">X-Plan Partner Recognition<br>Ford - RGB</p>
+                                    <a class="fmc-button" href="#">
+                                        Download file
+                                        <span class="fds-icon fds-font--ford-icons__chevron-right fds-icon--offset-right"></span>
+                                    </a>
+                                </div>
+                                <div class="fds-layout-grid__cell--span-4 fds-align--center fmc-mt-8">
+                                    <img class="fmc-marketing-toolkit-img fmc-cards__image fmc-mb-2" src="./img/xplan-full-logo.svg" alt="a placeholder" />
+                                    <p class="fmc-type--body2 fmc-type--bold fmc-mb-3">X-Plan Partner Recognition<br>Ford - RGB</p>
+                                    <a class="fmc-button" href="#">
+                                        Download file
+                                        <span class="fds-icon fds-font--ford-icons__chevron-right fds-icon--offset-right"></span>
+                                    </a>
+                                </div>
+                                <div class="fds-layout-grid__cell--span-4 fds-align--center fmc-mt-8">
+                                    <img class="fmc-marketing-toolkit-img fmc-cards__image fmc-mb-2" src="./img/xplan-full-logo.svg" alt="a placeholder" />
+                                    <p class="fmc-type--body2 fmc-type--bold fmc-mb-3">X-Plan Partner Recognition<br>Ford - RGB</p>
+                                    <a class="fmc-button" href="#">
+                                        Download file
+                                        <span class="fds-icon fds-font--ford-icons__chevron-right fds-icon--offset-right"></span>
+                                    </a>
+                                </div>
+                                <div class="fds-layout-grid__cell--span-4 fds-align--center fmc-mt-8">
+                                    <img class="fmc-marketing-toolkit-img fmc-cards__image fmc-mb-2" src="./img/xplan-full-logo.svg" alt="a placeholder" />
+                                    <p class="fmc-type--body2 fmc-type--bold fmc-mb-3">X-Plan Partner Recognition<br>Ford - RGB</p>
+                                    <a class="fmc-button" href="#">
+                                        Download file
+                                        <span class="fds-icon fds-font--ford-icons__chevron-right fds-icon--offset-right"></span>
+                                    </a>
+                                </div>
+                                <div class="fds-layout-grid__cell--span-4 fds-align--center fmc-mt-8">
+                                    <img class="fmc-marketing-toolkit-img fmc-cards__image fmc-mb-2" src="./img/xplan-full-logo.svg" alt="a placeholder" />
+                                    <p class="fmc-type--body2 fmc-type--bold fmc-mb-3">X-Plan Partner Recognition<br>Ford - RGB</p>
+                                    <a class="fmc-button" href="#">
+                                        Download file
+                                        <span class="fds-icon fds-font--ford-icons__chevron-right fds-icon--offset-right"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fmc-tabs__tabpanel" role="tabpanel" aria-labelledby="xPlanHeyContactFuide" tabindex="-1">
+                        <div class="fds-layout-grid">
+                            <div class="fds-layout-grid__inner">
+                                <div class="fds-layout-grid__cell--span-4 fds-align--center fmc-mt-8">
+                                    <img class="fmc-marketing-toolkit-img fmc-cards__image fmc-mb-2" src="./img/xplan-full-logo.svg" alt="a placeholder" />
+                                    <p class="fmc-type--body2 fmc-type--bold fmc-mb-3">X-Plan Partner Recognition<br>Ford - RGB</p>
+                                    <a class="fmc-button" href="#">
+                                        Download file
+                                        <span class="fds-icon fds-font--ford-icons__chevron-right fds-icon--offset-right"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
         </div>
     </main>
     <footer class="footer">
@@ -80,5 +268,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="js/scripts.js"></script>
+    
 </body>
 </html>

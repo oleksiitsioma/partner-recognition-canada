@@ -14,7 +14,13 @@
     <link rel="stylesheet" type="text/css" href="css/custom.css" />
 </head>
 <body>
-    <header>
+    <div class="mobileHeader fmc-py-3 fmc-px-3">
+        <a href="./index.html" class="header__logoLink">
+            <img src="./img/header-logo.svg" alt="" class="header__logo">
+        </a>
+        <button class="menu" id="menu-opener">menu</button>
+    </div>
+    <header class="header header_home">
         <div class="header_top fds-color__bg--fourth">
             <div class="fds-layout-grid fds-align--right fmc-py-2">
                 <ul class="header_top__menu menu_small">
@@ -326,5 +332,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="js/scripts.js"></script>
+
 </body>
 </html>

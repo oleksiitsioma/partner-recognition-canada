@@ -1,5 +1,24 @@
 'use strict'
 
+// HEADER
+
+const menuOpener = document.getElementById('menu-opener');
+
+const header = document.querySelector('header');
+
+menuOpener.addEventListener("click", function(){
+    if(header.classList.contains("header_mobile_open")){
+        header.classList.remove("header_mobile_open");
+    } else {
+        header.classList.add("header_mobile_open");
+    }
+})
+
+// END HEADER
+
+
+
+
 // MODALS
 
 const modalOpeners = document.querySelectorAll('.fmc-button--modalopener');
