@@ -1,3 +1,14 @@
+.fds-layout-grid{
+    max-width: 1600px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.fmc-billboard__content{
+    padding-left: calc(50% - 800px);
+    padding-right: calc(50% - 800px);
+}
+
 .header_home .header_main .fds-layout-grid{
     padding-bottom: 0;
 }
@@ -97,4 +108,39 @@
 
 .fmc-dialog ul li:before{
     content: "\2014   ";
+}
+
+.fmc-tabs__tablist{
+    margin-left: 0;
+    border-bottom: 1px solid rgba(0,0,0,0.4);
+    width: 100%;
+}
+
+.fmc-tabs__tablist .fmc-tabs__tab{
+    border: none!important;
+    outline: none!important;
+    letter-spacing: 1px;
+    padding-bottom: 16px;
+}
+
+.fmc-tabs__tablist .fmc-tabs__tab:after{
+    display: none;
+}
+
+.fmc-tabs__tabpanel{
+    width: 100%;
+}
+
+.fmc-marketing-toolkit-img{
+    width: 220px;
+    height: 200px;
+    object-fit: contain;
+}
+
+.fmc-check label{
+    margin: 0!important;
+}
+
+.fmc-check label:not(:last-child){
+    margin-bottom: 6px!important;
 }
