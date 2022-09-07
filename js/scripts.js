@@ -6,10 +6,14 @@ const menuOpener = document.getElementById('menu-opener');
 
 const header = document.querySelector('header');
 
+const body = document.querySelector('body');
+
 menuOpener.addEventListener("click", function(){
     if(header.classList.contains("header_mobile_open")){
         header.classList.remove("header_mobile_open");
+        body.classList.remove('menu-opened');
     } else {
+        body.classList.add('menu-opened');
         header.classList.add("header_mobile_open");
     }
 })

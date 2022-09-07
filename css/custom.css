@@ -7,6 +7,7 @@
 .fmc-billboard__content{
     padding-left: calc(50% - 800px);
     padding-right: calc(50% - 800px);
+    padding-bottom: 20px;
 }
 
 .header_home .header_main .fds-layout-grid{
@@ -149,6 +150,72 @@
     display: none;
 }
 
+.fmc-billboard{
+    height: auto;
+}
+
+.fmc-dialog__content{
+    width: 800px!important;
+}
+
+.fmc-dialog__content.modal-login{
+    width: 600px!important;
+}
+
+.header_main__menu li a.active{
+    text-decoration: underline;
+    color: #1700f4;
+}
+
+.salesTable td,
+.salesTable th{
+    padding-top: 16px;
+    padding-bottom: 16px;
+    vertical-align: middle;
+}
+
+.salesTable__date{
+    color: #4d4d4d;
+}
+
+.salesTable th{
+    height: 100px;
+}
+
+.salesTable_withTotalRow tr:last-child td{
+    background-color: #6E6E6E!important;
+    color: white;
+}
+
+.salesTable_withTotalRow tr:last-child td:first-child{
+    background-color: #00095b!important;
+}
+
+.salesInput{
+    display: flex;
+    align-items: center;
+}
+
+.salesInput .label{
+    margin-top: 24px;
+    margin-right: 20px;
+}
+
+.salesInput .inputHolder{
+    flex-grow: 3;
+}
+
+.salesInputTable{
+    border-bottom: 1px solid rgba(0,0,0,0.4);
+    padding-top: 13px;
+    padding-bottom: 55px;
+    margin-bottom: 45px;
+}
+
+.salesInputTable .generateButton{
+    margin-top: 28px;
+}
+
 @media screen and (max-width: 768px){
     .fds-layout-grid__inner{
         display: block;
@@ -211,5 +278,54 @@
     }
     .fmc-input, .fmc-select{
         margin-bottom: 12px;
+    }
+
+    .fmc-dialog__content, .fmc-dialog__content.modal-login{
+        width: calc(100% - 20px)!important;
+        margin: 10px!important;
+    }
+    body.menu-opened{
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .salesInputTable{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .salesTable{
+        min-width: 1000px;
+    }
+    
+    .salesTableHolder{
+        overflow-x: auto;
+    }
+
+    .salesInputTable .salesInput{
+        flex-direction: column;
+        align-items: normal;
+        text-align: center;
+    }
+
+    .salesInputTable .generateButton{
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    .menu-hamburger{
+        display: flex;
+        height: 20px;
+        width: 25px;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .menu-hamburger-item{
+        display: block;
+        background-color: #00095b;
+        height: 4px;
+        width: 25px;
     }
 }

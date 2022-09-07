@@ -18,15 +18,16 @@
         <a href="./index.html" class="header__logoLink">
             <img src="./img/header-logo.svg" alt="" class="header__logo">
         </a>
-        <button class="menu" id="menu-opener">menu</button>
+        <button class="menu menu-hamburger" id="menu-opener">
+            <span class="menu-hamburger-item"></span>
+            <span class="menu-hamburger-item"></span>
+            <span class="menu-hamburger-item"></span>
+        </button>
     </div>
     <header class="header header_home">
         <div class="header_top fds-color__bg--fourth">
             <div class="fds-layout-grid fds-align--right fmc-py-2">
                 <ul class="header_top__menu menu_small">
-                    <li class="fds-color__text--primary"><a href="./index.html">Ford Recognition</a></li>
-                    <li class="fds-color__text--primary"><a href="https://ford.com" target="_blank"> Ford.com</a></li>
-                    <li class="fds-color__text--primary"><a href="https://lincoln.com" target="_blank">Lincoln.com</a></li>
                     <li class="fds-color__text--primary"><a href="#">Log out</a></li>
                     <li class="fds-color__text--primary"><a href="./faqs.html">FAQs</a></li>
                     <li class="fds-color__text--primary"><a href="./contact-us.html">Contact us</a></li>
@@ -89,6 +90,14 @@
                         <button class="fmc-button fmc-button--modalopener" data-modal-opener="Employee Partner" data-dark>Modal 3</button>
                     </div>
                 </div>
+                <div class="fds-layout-grid__inner fmc-pt-13">
+                    <div class="fds-layout-grid__cell--span-4 fds-layout-grid__cell--align-bottom">
+                        <img src="./img/dashboard-billboard-icon.svg" alt="">
+                    </div>
+                    <div class="fds-layout-grid__cell--span-8 fds-layout-grid__cell--align-bottom">
+                        <p class="fmc-type--content1 fds-align--right"><span class="fds-color__text--white">Computer-generated image with available features and aftermarket equipment shown.</span></p>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -140,18 +149,24 @@
     </footer>
 
     <div class="fmc-dialog fds-align--center" role="dialog" aria-modal="true" data-modal="Login modal">
-        <div class="fmc-dialog__content">
+        <div class="fmc-dialog__content modal-login">
             <button class="fmc-dialog__close fds-icon fds-font--ford-icons__clear" alt="A close button."></button>
-            <div class="fmc-dialog__header fmc-pb-3 fmc-mb-3">
-                <h2 class="fmc-type--subtitle1 fmc-mb-1">Academy Ford Sales</h2>
-                <h2 class="fmc-type--subtitle1">Membership Organization Partner</h2>
+            <p class="fmc-type--content1 fmc-type--bold">Welcome to the X-Plan Partner Recognition</p>
+            <p class="fmc-type--content1 fmc-type--bold">Key Contact Resource Center</p>
+            <div class="fds-layout-grid fmc-pt-4">
+                <div class="fds-layout-grid__inner">
+                    <div class="fds-layout-grid__cell--span-3"></div>
+                    <div class="fds-layout-grid__cell--span-6">
+                        <div class="fmc-type--content2 fds-color__text--gray3 fmc-mb-2 fds-align--left">Partner Code</div>
+                        <input class="fmc-input fmc-mb-7" type="text">
+                        <a class="fmc-button fmc-mb-9" href="#" >Log In</a>
+                    </div>
+                    <div class="fds-layout-grid__cell--span-3"></div>
+                </div>
             </div>
-            <div class="">
-                <p class="fmc-type--body2">
-                    This site is a resource center designated for the key contact at each approved company/organization. If you reached this site in error and would like to access the customer site to generate a PIN, please click <a href="#">here</a>.
-                </p>
-            </div>
-            
+            <p class="fmc-type--body2">
+                This site is a resource center designated for the key contact at each approved company/organization. If you reached this site in error and would like to access the customer site to generate a PIN, please click <a href="#">here</a>.
+            </p>
         </div>
     </div>
 
