@@ -64,6 +64,10 @@
     outline-color: white!important;
 }
 
+button:focus, input:focus, select:focus, div:focus{
+    outline: none!important;
+}
+
 .fmc-type--underline{
     text-decoration: underline!important;
 }
