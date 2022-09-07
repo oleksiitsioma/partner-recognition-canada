@@ -216,6 +216,10 @@
     margin-top: 28px;
 }
 
+.fmc-billboard .fmc-billboard__image{
+    background-position: bottom;
+}
+
 @media screen and (max-width: 768px){
     .fds-layout-grid__inner{
         display: block;
