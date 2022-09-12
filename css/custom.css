@@ -1,7 +1,7 @@
 .fds-layout-grid{
-    max-width: 1600px;
-    padding-left: 0;
-    padding-right: 0;
+    max-width: 1630px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .fmc-billboard__content{
@@ -150,6 +150,14 @@ button:focus, input:focus, select:focus, div:focus{
     margin-bottom: 6px!important;
 }
 
+.fmc-check input{
+    margin-right: 10px!important;
+}
+
+.fmc-check button{
+    padding: 0!important;
+}
+
 .mobileHeader{
     display: none;
 }
@@ -222,6 +230,10 @@ button:focus, input:focus, select:focus, div:focus{
 
 .fmc-billboard .fmc-billboard__image{
     background-position: bottom;
+}
+
+.dashboardIcons{
+    align-items: flex-end;
 }
 
 @media screen and (max-width: 768px){
@@ -335,5 +347,9 @@ button:focus, input:focus, select:focus, div:focus{
         background-color: #00095b;
         height: 4px;
         width: 25px;
+    }
+
+    .dashboardIcons__item{
+        margin-bottom: 20px;
     }
 }
