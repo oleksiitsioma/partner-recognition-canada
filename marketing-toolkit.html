@@ -69,42 +69,40 @@
             <div class="fmc-type--content2 fds-color__text--gray3 fmc-mb-2">Brand</div>
             <div class="js-fmc-tabs fmc-tabs">
                 <div class="fmc-tabs__tablist-wrapper">
-                  <div class="fmc-tabs__tablist" role="tablist" aria-label="Features">
-                    <fieldset class="fmc-check" id="marketingToolkitBrands">
+                    <fieldset class="fmc-check fmc-tabs__tablist" id="marketingToolkitBrands" aria-label="Marketing Toolkit Brands">
                         <label class="fmc-py-2 fmc-px-0">
-                            <input type="radio" name="radio-button-items" value="ford" checked="">
+                            <input type="radio" name="radio-button-items" value="ford">
                             <button
-                              class="fmc-tabs__tab"
-                              role="tab"
-                              aria-selected="true"
-                              aria-controls="xPlanBrandFord"
-                              tabindex="0"
+                                class="fmc-tabs__tab"
+                                role="tab"
+                                aria-selected="false"
+                                aria-controls="xPlanBrandFord"
+                                tabindex="0"
                             >
-                              Ford
+                                Ford
                             </button>
                         </label>
                         <label class="fmc-py-2 fmc-px-0">
                             <input type="radio" name="radio-button-items" value="lincoln">
                             <button
-                              class="fmc-tabs__tab"
-                              role="tab"
-                              aria-selected="false"
-                              aria-controls="xPlanBrandLincoln"
-                              tabindex="-1"
+                                class="fmc-tabs__tab"
+                                role="tab"
+                                aria-selected="false"
+                                aria-controls="xPlanBrandLincoln"
+                                tabindex="-1"
                             >
-                              Lincoln
+                                Lincoln
                             </button>
                         </label>
                     </fieldset>
                     <span class="fmc-tabs__tab-border"></span>
-                  </div>
                 </div>
-                <div class="fmc-tabs__tabpanels">
+                <div class="fmc-tabs__tabpanels" aria-tabs="Marketing Toolkit Brands">
                     <div class="fmc-tabs__tabpanel" role="tabpanel" aria-labelledby="xPlanBrandFord" tabindex="0">
                         1
-                        <div class="js-fmc-tabs fmc-tabs fmc-pt-7 toolkitInnerTabs">
+                        <div class="js-fmc-tabs fmc-tabs fmc-pt-7">
                             <div class="fmc-tabs__tablist-wrapper">
-                                <div class="fmc-tabs__tablist" role="tablist">
+                                <div class="fmc-tabs__tablist" role="tablist" aria-label="Marketing Toolkit Ford">
                                     <button
                                     class="fmc-tabs__tab fds-color__text--gray2 fmc-type--bold"
                                     role="tab"
@@ -135,7 +133,7 @@
                                     <span class="fmc-tabs__tab-border"></span>
                                 </div>
                             </div>
-                            <div class="fmc-tabs__tabpanels fds-color--gray3">
+                            <div class="fmc-tabs__tabpanels fds-color--gray3" aria-tabs="Marketing Toolkit Ford">
                                 <div class="fmc-tabs__tabpanel fmc-pt-4" role="tabpanel" aria-labelledby="xPlanPrintAssets" tabindex="0">
                                     <div class="fds-layout-grid">
                                         <div class="fds-layout-grid__inner">
@@ -287,9 +285,9 @@
                     </div>
                     <div class="fmc-tabs__tabpanel" role="tabpanel" aria-labelledby="xPlanBrandLincoln" tabindex="-1">
                         2
-                        <div class="js-fmc-tabs fmc-tabs fmc-pt-7 toolkitInnerTabs">
+                        <div class="js-fmc-tabs fmc-tabs fmc-pt-7">
                             <div class="fmc-tabs__tablist-wrapper">
-                                <div class="fmc-tabs__tablist" role="tablist">
+                                <div class="fmc-tabs__tablist" role="tablist" aria-label="Marketing Toolkit Lincoln">
                                     <button
                                     class="fmc-tabs__tab fds-color__text--gray2 fmc-type--bold"
                                     role="tab"
@@ -320,7 +318,7 @@
                                     <span class="fmc-tabs__tab-border"></span>
                                 </div>
                             </div>
-                            <div class="fmc-tabs__tabpanels fds-color--gray3">
+                            <div class="fmc-tabs__tabpanels fds-color--gray3" aria-tabs="Marketing Toolkit Lincoln">
                                 <div class="fmc-tabs__tabpanel fmc-pt-4" role="tabpanel" aria-labelledby="xPlanPrintAssets" tabindex="0">
                                     <div class="fds-layout-grid">
                                         <div class="fds-layout-grid__inner">
