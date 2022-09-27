@@ -353,3 +353,7 @@ button:focus, input:focus, select:focus, div:focus{
         margin-bottom: 20px;
     }
 }
+
+a, input, textarea{
+    outline: none!important;
+}

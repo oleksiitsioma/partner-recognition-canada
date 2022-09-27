@@ -59,33 +59,38 @@ for(let i=0; i<modalClosers.length; i++){
 
 // TABS
 
-const tabLabels = document.querySelectorAll('.fmc-tabs');
+const tabControls = document.querySelectorAll('.fmc-tabs__tab');
+const tabs = document.querySelectorAll('.fmc-tabs__tabpanel');
 
-function tabsObject(labelArea) {
-    let tabs = labelArea.querySelector('.fmc-tabs__tablist');
-    tabs = tabs.getAttribute('aria-label');
-    tabs = document.querySelector(`*[aria-tabs="${tabs}"]`);
 
-    const object = {
-        labels: labelArea,
-        tabs: tabs
+tabControls[0].setAttribute("aria-selected", "true");
+tabs[0].classList.add('fmc-tabs__tabpanel--active');
+tabControls[0].classList.remove('fds-color__text--gray2');
+tabControls[0].classList.add('fds-color__text--secondary');
+
+
+function disableTabs() {
+    for(let i=0; i<tabControls.length; i++){
+        tabControls[i].setAttribute("aria-selected", "false");
+        tabControls[i].classList.add('fds-color__text--gray2');
+        tabControls[i].classList.remove('fds-color__text--secondary');
     }
-
-    return object;
+    for(let i=0; i<tabs.length; i++){
+        tabs[i].classList.remove("fmc-tabs__tabpanel--active");
+    }
 }
 
-function tabsReset(obj) {
-    let tabControls = obj.labels;
-    let tabs = obj.tabs;
-    console.log(tabControls);
-    console.log(tabs);
+for(let i=0; i<tabControls.length; i++){
 
-    // tabControls[0].setAttribute("aria-selected", "true");
-    // tabs[0].classList.add('fmc-tabs__tabpanel--active');
-    // tabControls[0].classList.remove('fds-color__text--gray2');
-    // tabControls[0].classList.add('fds-color__text--secondary');
+    tabControls[i].addEventListener('click', function(){
+        disableTabs();
+        this.setAttribute("aria-selected", "true");
+        this.classList.remove('fds-color__text--gray2');
+        this.classList.add('fds-color__text--secondary');
+        const tabLabel = tabControls[i].getAttribute('aria-controls');
+        const tab = document.querySelector(`.fmc-tabs__tabpanel[aria-labelledby="${tabLabel}"]`);
+        tab.classList.add('fmc-tabs__tabpanel--active');
+    })
 }
 
-for(let i=0; i<tabLabels.length; i++){
-    tabsReset(tabsObject(tabLabels[i]));
-}
+// END TABS
